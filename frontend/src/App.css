@@ -1,0 +1,715 @@
+/* =========================================
+   GLOBAL HOME PAGE
+========================================= */
+
+.home-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg,
+      #f5faf5,
+      #eef7f0);
+
+  color: #315e3c;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  height: 70px;
+
+  padding: 0 5%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5eee6;
+
+  box-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.04);
+
+  position: sticky;
+  top: 0;
+
+  z-index: 100;
+}
+
+
+/* Brand */
+
+.brand {
+  font-size: 22px;
+  font-weight: 800;
+
+  color: #315e3c;
+
+  white-space: nowrap;
+}
+
+
+/* Navigation */
+
+.home-nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+/* Navigation Links */
+
+.home-nav-links a {
+  color: #315e3c;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  font-size: 14px;
+
+  padding: 9px 11px;
+
+  border-radius: 8px;
+
+  transition: 0.2s ease;
+}
+
+
+.home-nav-links a:hover {
+  background: #eef7f0;
+
+  color: #285c38;
+}
+
+
+/* Logout */
+
+.logout-button {
+  border: none;
+
+  background: #fff0f0;
+
+  color: #b42318;
+
+  font-weight: 600;
+
+  font-size: 14px;
+
+  padding: 9px 13px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.logout-button:hover {
+  background: #ffe0e0;
+}
+
+
+/* =========================================
+   HOME CONTENT
+========================================= */
+
+.home-content {
+  width: 100%;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 45px 25px 60px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   COUPON ADVERTISEMENT
+========================================= */
+
+.coupon-ad {
+  width: 100%;
+
+  max-width: 1050px;
+
+  margin: 0 auto 28px;
+
+  padding: 28px 32px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 24px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(135deg,
+      #e7f6ea,
+      #f8fcf8);
+
+  border: 1px solid #cfe5d3;
+
+  box-shadow:
+    0 10px 30px rgba(49, 94, 60, 0.10);
+}
+
+
+/* Coupon Icon */
+
+.coupon-ad-icon {
+  width: 70px;
+
+  height: 70px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  font-size: 35px;
+
+  box-shadow:
+    0 6px 18px rgba(49, 94, 60, 0.10);
+}
+
+
+/* Coupon Content */
+
+.coupon-ad-content {
+  flex: 1;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* Badge */
+
+.coupon-ad-badge {
+  display: inline-block;
+
+  padding: 5px 11px;
+
+  border-radius: 20px;
+
+  background: #3f7d4d;
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+}
+
+
+/* Heading */
+
+.coupon-ad-content h2 {
+  margin: 8px 0 5px;
+
+  color: #285c38;
+
+  font-size: 28px;
+
+  font-weight: 800;
+}
+
+
+/* Description */
+
+.coupon-ad-content p {
+  margin: 0 0 15px;
+
+  color: #55705c;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* Coupon Actions */
+
+.coupon-ad-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+
+/* Coupon Code */
+
+.coupon-code-box {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 9px 14px;
+
+  background: #ffffff;
+
+  border: 1px dashed #3f7d4d;
+
+  border-radius: 9px;
+}
+
+
+.coupon-code-box span {
+  color: #6b7d70;
+
+  font-size: 12px;
+}
+
+
+.coupon-code-box strong {
+  color: #315e3c;
+
+  font-size: 14px;
+
+  letter-spacing: 1px;
+}
+
+
+/* Shop Now */
+
+.coupon-shop-button {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  background: #3f7d4d;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border-radius: 9px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+
+.coupon-shop-button:hover {
+  background: #32673e;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 12px rgba(49, 94, 60, 0.15);
+}
+
+
+/* Decoration */
+
+.coupon-ad-decoration {
+  position: absolute;
+
+  right: 20px;
+
+  bottom: -22px;
+
+  font-size: 95px;
+
+  opacity: 0.10;
+
+  transform: rotate(-15deg);
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   WELCOME CARD
+========================================= */
+
+.welcome-card {
+  width: 100%;
+
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  padding: 45px 40px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  border: 1px solid #e5eee6;
+
+  box-shadow:
+    0 12px 35px rgba(49, 94, 60, 0.08);
+}
+
+
+/* Welcome Icon */
+
+.welcome-icon {
+  width: 70px;
+
+  height: 70px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef7f0;
+
+  font-size: 34px;
+}
+
+
+/* Heading */
+
+.welcome-card h1 {
+  margin: 0 0 12px;
+
+  color: #315e3c;
+
+  font-size: 32px;
+}
+
+
+/* Description */
+
+.welcome-card>p {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: #667a6b;
+
+  line-height: 1.6;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   USER INFORMATION
+========================================= */
+
+.user-info {
+  margin-top: 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+
+.user-info>div {
+  padding: 18px 12px;
+
+  background: #f7fbf7;
+
+  border: 1px solid #e4eee5;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+
+.user-info span {
+  color: #7b8d80;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+
+.user-info strong {
+  color: #315e3c;
+
+  font-size: 14px;
+
+  word-break: break-word;
+}
+
+
+/* =========================================
+   HOME BUTTONS
+========================================= */
+
+.home-buttons {
+  margin-top: 30px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+
+.home-buttons a {
+  display: inline-block;
+
+  padding: 13px 25px;
+
+  background: #3f7d4d;
+
+  color: white;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+
+.home-buttons a:hover {
+  background: #32673e;
+
+  transform: translateY(-1px);
+}
+
+
+.home-buttons .secondary-home-button {
+  background: #e6f2e8;
+
+  color: #315e3c;
+}
+
+
+.home-buttons .secondary-home-button:hover {
+  background: #d7eadb;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .home-nav-links {
+    gap: 3px;
+  }
+
+  .home-nav-links a {
+    font-size: 13px;
+
+    padding: 8px;
+  }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .navbar {
+    height: auto;
+
+    padding: 15px 5%;
+
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+
+  .home-nav-links {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+
+  .coupon-ad {
+    padding: 22px;
+
+    gap: 15px;
+  }
+
+
+  .coupon-ad-icon {
+    width: 58px;
+
+    height: 58px;
+
+    font-size: 28px;
+  }
+
+
+  .coupon-ad-content h2 {
+    font-size: 23px;
+  }
+
+
+  .coupon-ad-content p {
+    font-size: 13px;
+  }
+
+
+  .welcome-card {
+    padding: 35px 25px;
+  }
+
+
+  .user-info {
+    grid-template-columns:
+      1fr;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+  .home-content {
+    padding:
+      25px 15px 40px;
+  }
+
+
+  .brand {
+    font-size: 19px;
+  }
+
+
+  .home-nav-links {
+    gap: 2px;
+  }
+
+
+  .home-nav-links a {
+    font-size: 12px;
+
+    padding: 7px;
+  }
+
+
+  .logout-button {
+    font-size: 12px;
+
+    padding: 7px 9px;
+  }
+
+
+  .coupon-ad {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 22px;
+  }
+
+
+  .coupon-ad-content h2 {
+    font-size: 21px;
+  }
+
+
+  .coupon-ad-actions {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+
+  .coupon-code-box {
+    width: fit-content;
+  }
+
+
+  .coupon-shop-button {
+    text-align: center;
+
+    width: fit-content;
+  }
+
+
+  .coupon-ad-decoration {
+    display: none;
+  }
+
+
+  .welcome-card h1 {
+    font-size: 26px;
+  }
+
+
+  .welcome-card {
+    padding:
+      30px 20px;
+  }
+
+}
